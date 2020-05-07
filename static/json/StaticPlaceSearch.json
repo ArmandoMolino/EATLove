@@ -1,0 +1,366 @@
+{
+   "html_attributions" : [],
+   "results" : [
+      {
+         "formatted_address" : "Via Castellammare, 152, 80035 Nola NA, Italia",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.8770983,
+               "lng" : 14.511698
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.87844822989272,
+                  "lng" : 14.51303827989272
+               },
+               "southwest" : {
+                  "lat" : 40.87574857010727,
+                  "lng" : 14.51033862010728
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "9bf3950c1dc8e41cab8a524991ee75624f910750",
+         "name" : "Bloomà club -Bclub",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3797,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115410388494681827284\"\u003eBloomà Club\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAP2bQUyTZIZoGRftUV2CPqXFV1KSGLyn9x2HVtP9HmWnk1sFfqt2j1rdwoOmT9BnaNYAYqq9Dg_vL5uxI_v80pDTC3NFgBuXYCJsnVpUZG20XZSQUieG2rVKAMivy3Ej6EhBXfzkHtG1eYlHL1wvsua5UGhRe7GabkEstMiwVQPhezsO1xXnWNA",
+               "width" : 5696
+            }
+         ],
+         "place_id" : "ChIJmdKgn1OwOxMR7vldZnORVvU",
+         "plus_code" : {
+            "compound_code" : "VGG6+RM Nola, Città Metropolitana di Napoli",
+            "global_code" : "8FGPVGG6+RM"
+         },
+         "price_level" : 2,
+         "rating" : 4.5,
+         "reference" : "ChIJmdKgn1OwOxMR7vldZnORVvU",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 150
+      },
+      {
+         "formatted_address" : "Via Ponte di Napoli, 37, 80036 Palma Campania NA, Italia",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.8334165,
+               "lng" : 14.5471048
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.83469632989272,
+                  "lng" : 14.54882507989272
+               },
+               "southwest" : {
+                  "lat" : 40.83199667010727,
+                  "lng" : 14.54612542010728
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "881402206185cb25c0f01028c6f4d19a4788be00",
+         "name" : "Aqua Cafe' lounge bar & food",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115869970223530981737\"\u003evitoruggiero74@libero.it\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAcHl4SqkKoP74s_yGLjGDQn6KX890SDX-4ODXXm5vh8j2pQIbf018EQ_g7E-b6q0nCW0hQlVsubTCHnuZoIHl02svU9YAjBbV5tjWBSLkmFR6eyAZEejCn3kN9GiqsVXJEhDpjzs7PL1lp19v-ihbhLn_GhRPQOPP9t9RfrzYXWVf51ghZ0uEfA",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJ84uAPAq6OxMRoA2_qFAApxM",
+         "plus_code" : {
+            "compound_code" : "RGMW+9R Palma Campania, Città Metropolitana di Napoli",
+            "global_code" : "8FGPRGMW+9R"
+         },
+         "rating" : 4.2,
+         "reference" : "ChIJ84uAPAq6OxMRoA2_qFAApxM",
+         "types" : [
+            "bakery",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 161
+      },
+      {
+         "formatted_address" : "Via Nuova Sarno, 111, 80036 Palma Campania NA, Italia",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.859518,
+               "lng" : 14.5533875
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.86086622989272,
+                  "lng" : 14.55482302989272
+               },
+               "southwest" : {
+                  "lat" : 40.85816657010728,
+                  "lng" : 14.55212337010728
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "50ab850a98b8eafbcf8d4e3fb2c2e8b00feee1ef",
+         "name" : "Pizzeria Oro Bianco Palma Campania",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3743,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/117768365405832791983\"\u003ePizzeria Oro Bianco Palma Campania\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAZ4Dy9zqGcp70AB5A13bGOAILCEFgKNSvBTfHjT7x2WQKfz5QRWFkB5oxT6k8g5BxsxRkr9FkmxC3DNCEwWEUnGQYVbBIET3FCPx3-uUuJN2uUwf1sWXo-fb6A7TOZLvGEhDHM-W-4mB14Qfaq0Li4eoMGhTfXrcbK-iEUwMZ8TKogHknOl8_Ug",
+               "width" : 5687
+            }
+         ],
+         "place_id" : "ChIJPQwQ-sWwOxMRIzSKg18Y1X8",
+         "plus_code" : {
+            "compound_code" : "VH53+R9 Palma Campania, NA",
+            "global_code" : "8FGPVH53+R9"
+         },
+         "rating" : 4.4,
+         "reference" : "ChIJPQwQ-sWwOxMRIzSKg18Y1X8",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 64
+      },
+      {
+         "formatted_address" : "Via Marigliano, 42, 80049 Somma Vesuviana NA, Italia",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.8746867,
+               "lng" : 14.4450129
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.87604377989272,
+                  "lng" : 14.44629877989272
+               },
+               "southwest" : {
+                  "lat" : 40.87334412010728,
+                  "lng" : 14.44359912010728
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "e2efea0d30a992a1206319fd675fc03278336122",
+         "name" : "L'oro di Napoli",
+         "opening_hours" : {},
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/105984123085171299997\"\u003eLiNo\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA-HbXLSx93pqRRMPD04wz5j4B3AerILaPu1rpdKIq_-x4rW_snJLdoIUcTO4M0hGLuuannLQZ5_ZMGifaaM5-3qPHBLdMrlNgd3oPSkjvZfzPnCJarIXZe3NFV-wrzn1MEhC9ThK91Q-IaA40NWg6UOkPGhS66qzgr3XnElClYms0MaNub_7N0g",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJ0wUEErmvOxMRqaYPlnIqsig",
+         "plus_code" : {
+            "compound_code" : "VCFW+V2 Somma Vesuviana, Somma vesuviana NA",
+            "global_code" : "8FGPVCFW+V2"
+         },
+         "rating" : 4.3,
+         "reference" : "ChIJ0wUEErmvOxMRqaYPlnIqsig",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 148
+      },
+      {
+         "formatted_address" : "Via Francesco Curia, 15, 80044 Ottaviano NA, Italia",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.85461799999999,
+               "lng" : 14.480546
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.85598012989273,
+                  "lng" : 14.48188877989272
+               },
+               "southwest" : {
+                  "lat" : 40.85328047010728,
+                  "lng" : 14.47918912010728
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "1fa0ceffc112beec89d4f626e9eea1966e449263",
+         "name" : "GEGE' PIZZERIA GOURMET",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 600,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/112924787857313093891\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA8BRyrm-o3JRhhfPaNpv52H0vupqaA8j7hxrkVceUP-i0OoGoJ6R6X9VCfO0wkY_tfT4Fut_xHK3Nj42XtLz-QfiPqmNHKzJcDkWRYTL-aLsbYnsvZE5E963CcHVCFo1nEhAs8OUGvFIF-wXJakBsIKDqGhRP1RcJD_0hAMRSCbfYmk3VGlpEZg",
+               "width" : 800
+            }
+         ],
+         "place_id" : "ChIJP0eqhamxOxMRR4ObA2VL9Ks",
+         "plus_code" : {
+            "compound_code" : "VF3J+R6 Ottaviano, NA",
+            "global_code" : "8FGPVF3J+R6"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJP0eqhamxOxMRR4ObA2VL9Ks",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 52
+      },
+      {
+         "formatted_address" : "Via Duomo, 9, 80035 Nola NA, Italia",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.9263335,
+               "lng" : 14.5283404
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.92766162989273,
+                  "lng" : 14.52967522989272
+               },
+               "southwest" : {
+                  "lat" : 40.92496197010728,
+                  "lng" : 14.52697557010728
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "3141bdd557cb41284c58be45a6321e316f1cd4c9",
+         "name" : "Zia Ernestina Pizzeria Gourmet",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2976,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114230306722246200166\"\u003eMichele Moving\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAEnnILIAqDIujQdI512s-p0uIUUOLz-UJmXENCPvR6vwg5U8Ee_Lybfc1cXItPGhltSk5ITQRzKxI8Gkh-VA7SUjqebhOA4ltc7Pci5yya6jTNGifl0WnW_h5ncuN7MwOEhATUpMlsv2qAeeEXzpQXfDiGhTs-7VtgfxU99ZcMnRvN5TbuTSd9w",
+               "width" : 3968
+            }
+         ],
+         "place_id" : "ChIJGR2cKNCzOxMRFJIN00aupZw",
+         "plus_code" : {
+            "compound_code" : "WGGH+G8 Nola, NA",
+            "global_code" : "8FGPWGGH+G8"
+         },
+         "price_level" : 2,
+         "rating" : 4.3,
+         "reference" : "ChIJGR2cKNCzOxMRFJIN00aupZw",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 378
+      },
+      {
+         "formatted_address" : "Piazza Ferrovia, 7, 80039 Saviano NA, Italia",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.9118966,
+               "lng" : 14.509522
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.91326802989272,
+                  "lng" : 14.51093222989272
+               },
+               "southwest" : {
+                  "lat" : 40.91056837010728,
+                  "lng" : 14.50823257010728
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "2f0ac125779c509272025f8b9dea1c5f1de30dbd",
+         "name" : "Ristorante Lo Spuntino",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 467,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111389641770786380424\"\u003eVincenzo Abate\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAIzpwo9fOVRXVoSiYWTyl67Utppc5kw0Jy7HlERwQCH9b8N2nCP0auV8SiZ4pQYVSoW3W8YyJIDvoHbRDZfRf3BrMdaIP1wzprjN9YdRGcF_CZu_uYPczIF8GgfBnuI6_EhCf87JIfbMLlbNVcVMDySqVGhQslYFDeEvKNbfcE9RoTYX9gYYy0w",
+               "width" : 700
+            }
+         ],
+         "place_id" : "ChIJY81x34SxOxMRGkRPrNJVzeM",
+         "plus_code" : {
+            "compound_code" : "WG65+QR Saviano, NA",
+            "global_code" : "8FGPWG65+QR"
+         },
+         "rating" : 4.3,
+         "reference" : "ChIJY81x34SxOxMRGkRPrNJVzeM",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 105
+      },
+      {
+         "formatted_address" : "Via Per Palma, 92, 80035 Nola NA, Italia",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.8910274,
+               "lng" : 14.5478233
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.89231437989272,
+                  "lng" : 14.54941507989272
+               },
+               "southwest" : {
+                  "lat" : 40.88961472010728,
+                  "lng" : 14.54671542010728
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "1e28215d66638bed2c148d10f85576689156160e",
+         "name" : "Villa Feanda Eventi",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 607,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/112710520327640704493\"\u003eVilla Feanda Eventi\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA4DczDVY4SAAvdsT-pCvG03wsqD4dKEMhVhPT2sbMCxXH8bQpGXeXEFsR0PaG_M_3px2WeAlkkLbiJH3RKnfeDJ9cmO4ZjkZGt-MPFb3CFKUgJyW7WXuTPd2DpiNNCcggEhCNbDLo5VL5ynQV_wI6VtjfGhQiXPBq1ClLqY3Pj7yUIFkQoUYZyg",
+               "width" : 1080
+            }
+         ],
+         "place_id" : "ChIJqaNp7j6xOxMRYu2HlprlAXc",
+         "plus_code" : {
+            "compound_code" : "VGRX+C4 Nola, NA",
+            "global_code" : "8FGPVGRX+C4"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJqaNp7j6xOxMRYu2HlprlAXc",
+         "types" : [ "restaurant", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 137
+      }
+   ],
+   "status" : "OK"
+}

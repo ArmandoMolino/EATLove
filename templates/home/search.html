@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<style>
+    p {
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+    }
+</style>
+{% block content %}
+
+    {% if places %}
+        <h3>Result</h3>
+        {% for place in places %}
+            <a class="place" href="{{ url_for('Place.place', place_id= place['place_id']) }}">
+                <article class="place">
+                    <header>
+                        <div id="recommend{{ place['name'] }}">
+                            {% if photo[place['place_id']] %}
+                                <img src="{{ photo[place['place_id']] }}" style="width:25%;height:25%;" class="center">
+                            {% else %}
+                                <img src="/static/no-img-placeholder.png" style="width:25%;height:25%;" class="center">
+                            {% endif %}
+                            <h4 style="margin-left: 10px;">{{ place['name'] }}</h4>
+                            <p style="margin-left: 30px">
+                                {% if place.get('opening_hours') %}
+                                    {% if (place.get('opening_hours')).get('open_now') %}
+                                        open
+                                    {% else %}
+                                        close
+                                    {% endif %}
+                                {% else %}
+                                    close
+                                {% endif %}
+                            </p>
+                            <p style="margin-left: 30px">types:
+                                {% for types in place['types'] %}
+                                    {{ types }},
+                                {% endfor %}
+                            </p>
+                            <p style="margin-left: 30px">rating:
+                                {% for rating in ratings %}
+                                    {% if rating <= place.get('rating', 0) %}
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Star%2A.svg" width="30" height="25">
+                                    {% else %}
+                                        {% if rating - place.get('rating', 0) >= 1 %}
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Empty_Star.svg" width="30" height="25">
+                                        {% elif rating - place.get('rating', 0) > 0.5 and rating - place.get('rating', 0) <= 0.9 %}
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Star%C2%BC.svg" width="30" height="25">
+                                        {% elif rating - place.get('rating', 0) >= 0.1 and rating - place.get('rating', 0) < 0.5 %}
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Star%C2%BE.svg" width="30" height="25">
+                                        {% else %}
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Star%C2%BD.svg" width="30" height="25">
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </header>
+                </article>
+            </a>
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}

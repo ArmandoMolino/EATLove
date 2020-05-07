@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+{% block content %}
+
+<script src="{{ url_for('static', filename='js/addElement.js') }}"></script>
+<script src="{{ url_for('static', filename='js/hideSearch.js') }}"></script>
+<script src="{{ url_for('static', filename='js/divs.js') }}"></script>
+<script src="{{ url_for('static', filename='js/rating.js') }}"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg_rW_Dx3AZ0XPo0oOykEib2SVSL2NMqI&callback=myMap"></script>
+<script> hideSearch() </script>
+
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .mySlides {display:none;}
+        table, th, td {
+          border: none;
+          border-collapse: collapse;
+        }
+        td {width: 500px;}
+    </style>
+
+
+<body>
+
+<!-- Titolo -->
+<h3 class="center" id="title">
+    {{ place['name'] }}
+</h3>
+
+<!-- Rating -->
+<p class="center" id="ratingStars1"></p>
+
+
+<!-- Contenitore delle immagini -->
+<div class="w3-content w3-display-container" id="container">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <img class="mySlides center" src="{{ frontPhoto }}" style="width:50%;height:50%;">
+</div>
+
+<h3>Info</h3>
+<table>
+
+    <!-- Info generali -->
+    <td>
+        <p>address: {{ place.get('formatted_address', "") }}</p>
+        <p>phone number: {{ place.get('international_phone_number', "") }}</p>
+        <p>
+            website: <a href="{{ place.get('website', "") }}">{{ place.get('website', "") }}</a>
+        </p>
+        <p id="openingHours">opening hours:
+        {% if place.get('opening_hours') %}
+            {% for weekday in (place.get('opening_hours')).get('weekday_text') %}
+                {{ weekday }}<p></p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {% endfor %}
+        {% endif %}
+        </p>
+
+    <!-- Mappa -->
+    </td>
+    <td id="googleMap" style="width:50%;height:400px;"></td>
+
+</table>
+
+<h3>Rating</h3>
+<table style="width:100%">
+
+    <!-- Chart recensioni -->
+    <td style="width: 600px;">
+        <div id="Chart"/>
+    </td>
+    <td>
+        <h5 style="font-size:60px;text-align: center;">{{ place.get('rating', 0) }}</h5>
+        <p style="text-align: center" id="ratingStars2" ></p>
+    </td>
+
+</table>
+
+<script>
+    txt = rating({{ place.get('rating', 0) }});
+    document.getElementById("ratingStars1").innerHTML = txt;
+    document.getElementById("ratingStars2").innerHTML = txt;
+
+    var latlng = new google.maps.LatLng({{ place['geometry']['location']['lat'] }}, {{ place['geometry']['location']['lng'] }});
+    var mapProp= {
+        center:latlng,
+        zoom:17,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var marker = new google.maps.Marker({
+        position:latlng,
+        map:map,
+    })
+
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      // Define the chart to be drawn
+      var rating = [0,0,0,0,0];
+        [{{ place['reviews'][0]['rating'] }}, {{ place['reviews'][1]['rating'] }},
+            {{ place['reviews'][2]['rating'] }}, {{ place['reviews'][3]['rating'] }},
+            {{ place['reviews'][4]['rating'] }}].forEach( x => { rating[Math.floor(x)-1] += 1; } );
+      var data = new google.visualization.arrayToDataTable([
+              ['Ratings', 'Percentage', { role: 'style' }],
+              ['5', rating[4], '#66ffcc'],
+              ['4', rating[3], '#bfff80'],
+              ['3', rating[2], '#ffff00'],
+              ['2', rating[1], '#ffcc00'],
+              ['1', rating[0], '#ff6600']
+            ]);
+
+      // Instantiate and draw the chart.
+      var chart = new google.visualization.BarChart(document.getElementById('Chart'));
+      var option = {
+          width: 600,
+          height: 300,
+          legend: 'none',
+          chartArea : { left: 25, right: 25},
+          vAxis: {
+              gridlines: {
+                  color: 'transparent'
+              }
+          },
+          hAxis: {
+              gridlines: {
+                  color: 'transparent'
+              },
+              format: ' '
+          }
+      };
+      chart.draw(data,option);
+
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    plusDivs(-1);
+</script>
+
+{% for photo in photos %}
+    <script>
+        addElement("container", "p", "p", "<img class=\"mySlides center\" src=\"{{ photo }}\" style=\"width:50%;height:50%;\">")
+    </script>
+{% endfor %}
+
+<h3>Reviews</h3>
+{% for review in place['reviews'] %}
+    <div>
+        <h6 style="margin-left: 10px;margin-bottom: 0px;">{{ review['author_name'] }}</h6>
+        <sub style="margin-left: 10px;">rating: {{ review['rating'] }}</sub>
+        <p></p>
+        <sub style="margin-left: 10px;">{{ review['relative_time_description'] }}</sub>
+        <p style="margin-left: 75px;margin-right: 10px;">{{ review['text'] }}</p>
+    </div>
+    <hr>
+{% endfor %}
+<script>
+    plusDivs(-1);
+    plusDivs(1);
+</script>
+</body>
+</html>
+{% endblock %}

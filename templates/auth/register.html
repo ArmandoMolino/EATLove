@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Register{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <script src="{{ url_for('static', filename='js/hideSearch.js') }}"></script>
+    <script> hideSearch() </script>
+
+  <form method="post">
+    <label for="name">Name</label>
+    <input name="name" id="name" required>
+
+    <label for="surname">Surname</label>
+    <input name="surname" id="surname" required>
+
+    <label for="username">Username</label>
+    <input name="username" id="username" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required>
+
+
+    <input type="submit" value="Register">
+  </form>
+{% endblock %}

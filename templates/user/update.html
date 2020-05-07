@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h3>{% block title %}Edit "{{ user['name'] }} {{ user['surname'] }}"{% endblock %}</h3>
+{% endblock %}
+
+{% block content %}
+    <script src="{{ url_for('static', filename='js/hideSearch.js') }}"></script>
+    <script> hideSearch() </script>
+
+    <form method="post">
+        <label for="name">Name</label>
+        <input name="name" id="name" value="{{ user['name'] }}" >
+
+        <label for="surname">Surname</label>
+        <input name="surname" id="surname" value="{{ user['surname']}}" >
+
+        <label for="email">Place</label>
+        <input type="email" name="email" id="email" value="{{ user['email'] }}" >
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"  >
+
+        <label for="country">Country</label>
+        <input name="country" id="country" value="{{ user['address'].split(", ")[0] }}">
+
+        <label for="city">City</label>
+        <input name="city" id="city" value="{{ user['address'].split(", ")[1] }}">
+
+        <label for="province">Province</label>
+        <input name="province" id="province" value="{{ user['address'].split(", ")[2] }}">
+
+        <label for="address">Address</label>
+        <input name="address" id="address" value="{{ user['address'].split(", ")[3] }}">
+
+        <input type="submit" value="Save" onclick="return confirm('Are you sure?');">
+    </form>
+{% endblock %}
+

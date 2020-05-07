@@ -1,0 +1,63 @@
+<!doctype html>
+<title>
+    EATLove
+</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='prova1.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav>
+  <h1>
+      EATLove <i class="fa fa-cutlery"></i>
+      <div class="navbar">
+          <a class="fa fa-home" style="margin-top: 14px; margin-left: 15px" href="{{ url_for('Home.home') }}"></a>
+
+          <!--Drop Up-->
+          <div class="dropdown" id="dropdown">
+              <a class="fa fa-list-alt"></a>
+
+              <div class="dropdown-content">
+
+                  <div class="dropdown-element">
+                      <h3>Category</h3>
+                      <a href="{{ url_for('Home.search', type= 'bakery') }}">bakery</a>
+                      <a href="{{ url_for('Home.search', type= "bar") }}">bar</a>
+                      <a href="{{ url_for('Home.search', type= "cafe") }}">cafe</a>
+                      <a href="{{ url_for('Home.search', type= "restaurant") }}">restaurant</a>
+                      <a href="{{ url_for('Home.search', type= "food") }}">food</a>
+                  </div>
+
+              </div>
+          </div>
+
+
+          <div class="search-container" id="search-container">
+              <form method="post">
+                <input style="margin-top: 15px" type="text" name="query" id="query" placeholder="Search..">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+          </div>
+      </div>
+  </h1>
+  <ul>
+    {% if g.user %}
+      <li><a class="button" href="{{ url_for('User.info', username= g.user['username']) }}"> {{ g.user['username'] }} </a>
+      <li><a class="button" href="{{ url_for('Auth.logout') }}">Log Out</a>
+    {% else %}
+      <li><a class="button" href="{{ url_for('Auth.register') }}">Register</a>
+      <li><a class="button" href="{{ url_for('Auth.login') }}">Log In</a>
+    {% endif %}
+  </ul>
+</nav>
+
+
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>
+
